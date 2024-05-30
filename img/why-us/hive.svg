@@ -1,0 +1,613 @@
+
+
+<!-- {{ $input := . }}
+{{ $email_title := "You left some items in your cart" }} -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>{{ $email_title }}</title>
+  <!-- <link rel="stylesheet" href="css.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- [if mso]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <style>
+    .spacer, .divider {mso-line-height-rule: exactly;}
+    th, td, div, p {font-size: 13px; line-height: 23px; font-family: Arial,sans-serif;}
+  </style>
+  <![end] -->
+
+  <style type="text/css">
+
+* {
+    /* border: 1px salmon solid; */
+}
+
+@font-face {
+    font-family: utmerie;
+    src: url(00088-UTM-Erie-Black.ttf);
+  }
+
+.logo {
+
+}
+
+.cirlces-menu {
+
+}
+
+.img-container {
+
+}
+
+.circles-section {
+
+}
+
+.circles-section span {
+    
+}
+
+.inner-img {
+
+}
+
+
+
+.inner-img img {
+
+}
+
+.nd-product {
+
+}
+
+/* Main banner */
+
+.main-banner {
+
+}
+
+.main-banner-contain {
+
+}
+
+.black-line {
+
+}
+
+.main-banner p {
+
+}
+
+.main-banner h1 {
+
+}
+
+.visit-btn-text {
+
+}
+.visit-your-cart-btn {
+    
+}
+
+/* Continue Shopping */
+
+.continue-shopping {
+    
+}
+
+.continue-btn-text {
+    
+}
+.continue-shopping-btn {
+
+}
+
+
+
+.a-btn {
+    
+}
+
+
+/* banner sale */
+
+.banner-sale {
+
+}
+
+.banner-sale h1 {
+    
+}
+
+
+/* footer navigation */
+
+.footer-navigation {
+
+}
+.link-navigation a{
+    
+}
+
+.link-navigation {
+    
+}
+
+.last-link {
+    
+}
+
+
+/* media contact */
+
+.media-contact {
+
+}
+
+.media-icon {
+    
+}
+
+/* mail footer */
+
+
+/* reponsive */
+@media only screen and (max-width: 426px) {
+    .cirlces-menu {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .main-banner {
+        margin: 0 0;
+    }
+
+    .main-banner h1 {
+        font-size: 24px;
+        width: 320px;
+        margin: 0 0;
+    }
+
+    .main-banner p {
+        width: 185px;
+        margin-top: 2px;
+        font-size: 10px;
+    }
+
+    .main-banner-contain {
+        width: 235px;
+        height: 157.9px;
+        padding-left: 15px;
+    }
+
+    .visit-your-cart-btn {
+        width: 70px;
+        height: 20px;
+    }
+
+    .visit-btn-text {
+        font-size: 7px;
+        line-height: 20px;
+    }
+
+    .banner-sale h1 {
+        font-size: 13px;
+    }
+
+    .link-navigation {
+        font-size: 11px;
+    }
+
+    .media-contact {
+        padding: 0px 60px;
+    }
+}
+
+
+@media only screen and (max-width:376px) {
+    .main-banner-contain {
+        width: 210px!important;
+        height: 139px!important;
+        padding-left: 15px!important;
+    }
+
+    .main-banner h1 {
+        font-size: 20px;
+        width: 200px;
+        margin: 0 0;
+    }
+
+    .main-banner p {
+        width: 145px;
+        margin-top: 2px;
+        font-size: 9px;
+    }
+    
+    .visit-your-cart-btn {
+        margin-top: -10px;
+    }
+    
+    .banner-sale h1 {
+        font-size: 11px;
+    }
+
+    .link-navigation {
+        font-size: 10px;
+    }
+    
+    .media-contact {
+        padding: 0px 50px;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .main-banner-contain {
+        width: 175px;
+        height: 118px;
+        padding-left: 15px;
+    }
+
+    .main-banner h1 {
+        font-size: 16px;
+        width: 200px;
+        margin: 0 0;
+    }
+
+    .main-banner p {
+        font-size: 7px;
+    }
+
+    .link-navigation {
+        font-size: 8px;
+    }
+
+    .banner-sale h1 {
+        font-size: 8px;
+    }
+}
+
+    @media only screen and (min-width: 1px) {
+      .serif {font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;}
+      .sans-serif {font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;}
+    }
+
+    #outlook a {padding: 0;}
+    a {text-decoration: none;}
+    table {border-collapse: collapse;}
+    .column {font-size: 13px; line-height: 23px;}
+    .column, h1, h2, h3, h4, h5, h6 {font-family: Arial,sans-serif;}
+    img {border: 0; display: block; line-height: 100%;}
+
+    .wrapper {min-width: 600px;}
+    .row {margin: 0 auto; width: 600px;}
+    .row .row, th .row {width: 100%;}
+
+    @media only screen and (max-width: 699px) {
+
+      .wrapper {min-width: 100% !important;}
+      .row {width: 90% !important;}
+      .row .row {width: 100% !important;}
+
+      .column {
+        box-sizing: border-box;
+        /* display: inline-block!important; */
+        line-height: inherit!important;
+        width: 100%!important;
+        word-break: break-word;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* .mobile-4  {max-width: 33.33333%;} */
+      .mobile-7  {max-width: 58.33333%;}
+      .mobile-8  {max-width: 66.66667%;}
+      .mobile-12 {
+        padding-right: 24px!important;
+        padding-left: 24px!important;
+      }
+
+      .has-columns {
+        padding-right: 20px!important;
+        padding-left: 20px!important;
+      }
+
+      .has-columns .column {
+        padding-right: 10px!important;
+        padding-left: 10px!important;
+      }
+
+      .mobile-collapsed .column {
+        padding-left: 0!important;
+        padding-right: 0!important;
+      }
+
+      img {
+        width: 100%!important;
+        height: auto!important;
+      }
+
+      .mobile-center {
+        display: table!important;
+        float: none;
+        margin-left: auto!important;
+        margin-right: auto!important;
+      }
+
+      .mobile-text-left   {text-align: left!important;}
+      .mobile-valign-top  {vertical-align: top!important;}
+
+      .hide-on-mobile {
+        display: none!important;
+        width: 0;
+        overflow: hidden;
+      }
+
+      .spacer {height: 10px; line-height: 100%!important; font-size: 100%!important;}
+
+      .mobile-padding-top-mini {padding-top: 10px!important;}
+      .mobile-margin-top-mini {margin-top: 10px!important;}
+      .mobile-margin-bottom {margin-bottom: 30px!important;}
+      .mobile-margin-bottom-mini {margin-bottom: 10px!important;}
+    }
+    
+  </style>
+</head>
+<body style="box-sizing: border-box; margin: 0; padding: 0; width: 100%;">
+
+<table class="wrapper" align="center" bgcolor="#EEEEEE" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 30px 0;">
+
+      <table class="row" align="center" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="spacer" height="30px" style="font-size: 30px; line-height: 30px;">&nbsp;</td>
+        </tr>
+        <tr style=" justify-content: center; display: flex;">
+          <th class="column logo" width="640" style="padding-left: 24px; padding-right: 24px; text-align: left; padding-bottom: 24px; align-items: center; display: flex; flex-direction: column; justify-content: center; width: 50%;">
+            <a href="https://inksleep.com/">
+              <img src="https://img.thesitebase.net/files/10488312/2024/03/13/17103513476df3d14bd8.png?width=128&height=0&min_height=0">
+            </a>
+          </th>
+        </tr>
+        <tr>
+          <td>
+
+            <div class="cirlces-menu" style="grid-template-columns: 1fr 1fr 1fr; display: grid; justify-content: space-between; padding: 0px 20px;">
+
+              <div class="circles-section" style="font-family: 'Montserrat'; font-size: 14px; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                  <a class="link-to-pants" href="https://inksleep.com/collections/pants">
+                    <div class="img-container" style="height: 50px; width: 50px; border-radius: 50%; background-image: linear-gradient(90deg,#887E8C, #E4C493); display: flex; align-items: center; justify-content: center; border-radius: 50%; overflow: hidden;">
+                      <div class="inner-img pants" style="width: 43px; height: 43px; border-radius: 50%; overflow: hidden; transition: 0.3s all ease;">
+                        <img style="width: 100%;" src="https://img.thesitebase.net/10488/10488312/products/ver_1/1712394030061a903820.jpeg?width=384&height=0&min_height=0">
+                      </div>
+                    </div>
+                  </a>
+                  
+                  <span style="margin-top: 15px;">PANTS</span>
+                </div>
+
+                <div class="circles-section" style="font-family: 'Montserrat'; font-size: 14px; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                  <a class="link-to-tops" href="https://inksleep.com/collections/tops">
+                    <div class="img-container" style="height: 50px; width: 50px; border-radius: 50%; background-image: linear-gradient(90deg,#887E8C, #E4C493); display: flex; align-items: center; justify-content: center; border-radius: 50%; overflow: hidden;">
+                      <div class="inner-img tops" style="width: 43px; height: 43px; border-radius: 50%; overflow: hidden; transition: 0.3s all ease;">
+                        <img style="width: 100%;" src="https://img.thesitebase.net/10488/10488312/products/ver_1/1712390886b9ab2e03c5.jpeg?width=384&height=0&min_height=0">
+                      </div>
+                    </div>
+                  </a>
+                  
+                  <span style="margin-top: 15px;">TOPS</span>
+                </div>
+
+                <div class="circles-section" style="font-family: 'Montserrat'; font-size: 14px; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                  <a class="link-to-dresses" href="https://inksleep.com/collections/dresses">
+                    <div class="img-container" style="height: 50px; width: 50px; border-radius: 50%; background-image: linear-gradient(90deg,#887E8C, #E4C493); display: flex; align-items: center; justify-content: center; border-radius: 50%; overflow: hidden;">
+                      <div class="inner-img dresses" style="width: 43px; height: 43px; border-radius: 50%; overflow: hidden; transition: 0.3s all ease;">
+                        <img style="width: 100%;" src="https://img.thesitebase.net/10488/10488312/products/ver_1/171238883425b8ff5894.jpeg?width=384&height=0&min_height=0">
+                      </div>
+                    </div>
+                  </a>
+                  
+                  <span style="margin-top: 15px;">DRESSES</span>
+                </div>
+
+                <div class="circles-section nd-product" style="margin-top: 20px; font-family: 'Montserrat'; font-size: 14px; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                  <a class="link-to-skirts" href="https://inksleep.com/collections/skirts">
+                    <div class="img-container" style="height: 50px; width: 50px; border-radius: 50%; background-image: linear-gradient(90deg,#887E8C, #E4C493); display: flex; align-items: center; justify-content: center; border-radius: 50%; overflow: hidden;">
+                      <div class="inner-img skirts" style="width: 43px; height: 43px; border-radius: 50%; overflow: hidden; transition: 0.3s all ease;">
+                        <img style="width: 100%;" src="https://img.thesitebase.net/10488/10488312/products/ver_1/1712391889babd3a2b61.jpeg?width=384&height=0&min_height=0">
+                      </div>
+                    </div>
+                  </a>
+                  
+                  <span style="margin-top: 15px;">SKIRTS</span>
+                </div>
+
+                <div class="circles-section nd-product" style="margin-top: 20px; font-family: 'Montserrat'; font-size: 14px; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                  <a class="link-to-sets" href="https://inksleep.com/collections/matching-sets">
+                    <div class="img-container" style="height: 50px; width: 50px; border-radius: 50%; background-image: linear-gradient(90deg,#887E8C, #E4C493); display: flex; align-items: center; justify-content: center; border-radius: 50%; overflow: hidden;">
+                      <div class="inner-img sets" style="width: 43px; height: 43px; border-radius: 50%; overflow: hidden; transition: 0.3s all ease;">
+                        <img style="width: 100%;" src="https://img.thesitebase.net/10488/10488312/products/ver_1/1712395184befdab519d.jpeg?width=384&height=0&min_height=0">
+                      </div>
+                    </div>
+                  </a>
+                  
+                  <span style="margin-top: 15px;">SETS</span>
+                </div>
+
+                <div class="circles-section nd-product" style="margin-top: 20px; font-family: 'Montserrat'; font-size: 14px; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                  <a class="link-to-swimwear" href="https://inksleep.com/collections/swimwear">
+                    <div class="img-container" style="height: 50px; width: 50px; border-radius: 50%; background-image: linear-gradient(90deg,#887E8C, #E4C493); display: flex; align-items: center; justify-content: center; border-radius: 50%; overflow: hidden;">
+                      <div class="inner-img swimwear" style="width: 43px; height: 43px; border-radius: 50%; overflow: hidden; transition: 0.3s all ease;">
+                        <img style="width: 100%;" src="https://img.thesitebase.net/10488/10488312/products/ver_1/1714889714a3a6ac317a.jpeg?width=384&height=0&min_height=0">
+                      </div>
+                    </div>
+                  </a>
+                    <span style="margin-top: 15px;">SWIMWEAR</span>
+                </div>
+              </div>
+          </td>
+
+          
+
+
+        </tr>
+      </table>
+
+      <table class="row" align="center" bgcolor="#FFFFFF"  cellpadding="0" cellspacing="0" style="margin-bottom: 16px">
+        <tr>
+          <!-- /* main banner */ -->
+          <td style="display: flex; justify-content: center; padding: 30px 0px; position: relative;">
+            <img style="width: 98%" src="https://img.thesitebase.net/files/10488312/2024/05/05/17148928075b6d967837.jpeg?width=1920&height=0&min_height=0" alt="">
+            <div class="main-banner" style="position: absolute; width: 96%; margin-left: 40px;">
+              <div class="main-banner-contain" style="background-color: #F5EAE2; width: 380px; height: 245px;">
+                <h1 style="font-family: 'utmerie'; font-size: 35px; margin: 0 auto; padding: 10px 0 0 0; line-height: 120%;">WE LOVE YOUR CHOICES</h1>
+                <div class="black-line" style="border: 1px solid #000; width: 50%;"></div>
+                <p style="font-family: 'Montserrat'; line-height: 150%; font-size: 16px; width: 275px;  margin: 15px 0;">Pick up where you left off! Don't miss out these fashion favorites, we know you will love it.</p>
+                <div class="visit-your-cart-btn" style="border: 1px solid #000; width: 160px; height: 35px; display: flex; justify-content: center; cursor: pointer; margin-top: -5px;">
+                  <a target="_blank" href="{{ .cart_url }}" style="color: #000;">
+                    <span class="visit-btn-text" style="font-family: 'Montserrat'; font-size: 13px; line-height: 35px;">VISIT YOUR CART</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </td>
+          <!-- <td class="spacer" height="30" style="font-size: 30px; line-height: 30px;">&nbsp;</td> -->
+        </tr>
+        <tr>
+          <th class="column" width="640" style="padding-left: 24px; padding-right: 24px; font-weight: 400; text-align: left;">
+            <div class="serif" style="color: #363e43; font-size: 24px; font-weight: bold; letter-spacing: -0.25px; line-height: 30px; margin-bottom: 8px;">{{ $email_title }}</div>
+            {{ if .custom_message }}
+            <div class="sans-serif" style="color: #363e43; font-size: 14px; line-height: 24px; margin-bottom: 24px;">{{ .custom_message }}</div>
+            {{ else }}
+            <div class="sans-serif" class="mobile-margin-bottom" style="color: #363e43; font-size: 14px; line-height: 24px; margin-bottom: 24px;">
+              <p>Dear {{.customer.first_name}},</p>
+              This is your forgotten items, check it out!
+            </div>
+            {{ end }}
+            <table class="mobile-collapsed" cellpadding="0" cellspacing="0" style="display: table; width: 100% !important; text-align: center; margin-top: 16px;">
+              <tr>
+                
+              </tr>
+            </table>
+          </th>
+        </tr>
+        <tr>
+          <td class="spacer" height="30px" style="font-size: 30px; line-height: 30px;">&nbsp;</td>
+        </tr>
+      <!-- </table> -->
+
+      <!-- <table class="row" align="center" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0"> -->
+        <tr>
+          <!-- <th class="column" style="padding: 24px; text-align: left;" colspan="2">
+            <div class="serif" style="color: #363e43; font-size: 22px; font-weight: bold;">In Your Cart</div>
+          </th> -->
+        </tr>
+        <tr>
+          <th class="column" colspan="3">
+            {{ range .line_items }}
+            <div>
+              <div style="display: flex; padding-left: 24px; padding-right: 24px; flex-direction: column; align-items: center;">
+                <div style="width: 160px; height: 160px;">
+                  <img src="{{ if .img_preview_url_200_200 }}{{ .img_preview_url_200_200 }}{{ else }}{{ .img_url_200_200 }}{{ end }}" width="240" alt="{{ if .product.title }}{{ .product.title }}{{ else }}{{ .title }}{{ end }}" style="border: 0; width: 100%; max-width: 240px;">
+                </div>
+                <div class="column mobile-4" style="flex: 13; padding-left: 20px; font-weight: 400; text-align: left; vertical-align: top;">
+                  <div class="Myriad Pro" style="margin:20px 0; color: #000; font-size: 16px; font-weight: 900;">{{ if .product.title }}{{ .product.title }}{{ else }}{{ .title }}{{ end }} x{{ .quantity }}</div>
+                  {{ if .product.description }}
+                  <div class="mobile-margin-top-mini sans-serif" style="color: #6E7A81; font-size: 13px; line-height: 16px; margin-bottom: 10px;">{{ .product.description }}</div>
+                  {{ else }}
+                  <div class="sans-serif" style="color: #6E7A81; font-size: 13px; line-height: 16px; margin-bottom: 10px;">{{ .price }}</div>
+                  {{ end }}
+                  {{ if .custom_options }}
+                  {{ range .custom_options }}
+                  {{ if or (eq .type "file") (eq .type "picture") }}
+                  <div class="mobile-margin-top-mini sans-serif" style="color: #6E7A81; font-size: 13px; line-height: 16px; margin-top: 5px;">
+                    {{ .name }}: <a href="{{ .validURL }}" title="{{ .validURL }}">customized</a>
+                  </div>
+                  {{ else }}
+                  <div class="mobile-margin-top-mini sans-serif" style="color: #6E7A81; font-size: 13px; line-height: 16px; margin-top: 5px;">
+                    {{ .name }}: {{ .value }}
+                  </div>
+                  {{ end }}
+                  {{ end }}
+                  {{ end }}
+                </div>
+              </div>
+              <div style="border-top: 1px solid #dbdfe1; font-size: 0; line-height: 0; margin: 10px 0;">&nbsp;</div>
+            </div>
+            {{ end }}
+
+            <div class="continue-shopping" style="width: 100%; justify-content: center; display: flex;  margin-top: 50px;">
+              <div class="continue-shopping-btn" style="border: 1px solid #000; background-color: #000; width: 200px; height: 50px; display: flex; justify-content: center; cursor: pointer; margin-top: -5px; font-weight: normal;">
+                <a class="a-btn" style="height: 100%; border: transparent; color: #fff;" href="https://inksleep.com/">
+                  <span class="continue-btn-text" style="font-family: 'Montserrat'; font-size: 13px; line-height: 50px; z-index: 2; position: absolute; left: 15%;">
+                  CONTINUE SHOPPING</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="banner-sale" style="width: 100%; height: 50px;
+            background-color: #000;
+            padding-left: 0px;
+            margin-top: 55px;">
+              <h1 style="margin: 0 0; color: #ECE71C; font-family: 'Montserrat'; font-weight: 700; letter-spacing: 4px; font-size: 21px; line-height: 50px;">
+              Free shipping on order over 50$</h1>
+            </div>
+
+            <div class="footer-navigation" style="height: 10px; width: 92%; display: grid; grid-template-columns: repeat(4,1fr); padding-left: 24px; margin-top: 30px; margin-bottom: 30px;">
+              <span style="border-right: #000 2px solid;" class="link-navigation"><a style="color: #000;" href="https://inksleep.com/pages/contact-us">Contact us</a></span>
+
+              <span style="border-right: #000 2px solid;" class="link-navigation"><a style="color: #000;" href="https://inksleep.com/pages/order-tracking">Other tracking</a></span>
+
+              <span style="border-right: #000 2px solid;" class="link-navigation"><a style="color: #000;" href="https://inksleep.com/pages/faqs">FAQs</a></span>
+
+              <span style="border-right: transparent;" class="link-navigation last-link"><a href="https://inksleep.com/pages/dmca">DMCA</a></span>
+            </div>
+
+            <div class="media-contact" style="display: flex; justify-content: space-around; padding: 0px 90px; margin-top: 60px; margin-bottom: 30px;">
+              <div class="media-icon" style="width: 20px;">
+                <a href="tel:+1 (844) 909-4899"><img width="20px" src="https://img.icons8.com/ios-filled/50/phone.png" alt="phone"></a>
+              </div>
+              <div class="media-icon" style="width: 20px;">
+                <a href="#instagram"><img width="20px" src="https://img.icons8.com/ios-filled/50/instagram-new--v1.png"></a>
+              </div>
+              <div class="media-icon" style="width: 20px;">
+                <a href="mailto:support@inksleep.com"><img width="20px" src="https://img.icons8.com/ios-glyphs/30/filled-message.png" alt="filled-message"></a>
+              </div>
+            </div>
+
+            <div class="mail-footer">
+              <div class="coppyright">© 2024 . All rights reserved.</div>
+              <div style="margin-top: 20px;" style="font-weight: 400;  color: #fff;" >If you no longer want to receive our email, please click the link below</div>
+              <div style="margin-top: 20px;">
+                <a style=" color: #fff;" href="{{.unsubscribe_url}}">Unsubscribe</a>
+              </div>
+            </th>
+            </div>
+
+          </th>
+        </tr>
+<!-- 
+        <tr class="mail-footer">
+          <th class="column" style="width: 100%;" >
+
+        </tr> -->
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
